@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './App.css';
 import Paypal from './PaypalButton';
 import {OutlinedInput} from '@material-ui/core';
-import PropTypes from "prop-types";
 
 class App extends Component {
   constructor(props) {
@@ -45,7 +44,7 @@ class App extends Component {
         </div>
       <div className="d-flex ">
         <div className="col-md-8">
-          <h1 className="text-left">Donation Amount</h1>
+          <h1 className="text-center">Donation Amount</h1>
           <div className="col-md-4"><input onChange={this.handleChange} type="radio" name="amount" value="100"/>
             <p>$100</p>
             <p>could fund a high schooler's SAT prep materials</p>
@@ -87,7 +86,6 @@ class App extends Component {
               onChange={this.handleChecked}/>$3.00
             </label>
             <p>I'd like to cover the transaction fee so 100% of my gift goes to Children's Aid</p>
-            <p>fee : {this.state.total}</p>
           </div>
         <div className="text-left">
           <p>Donate ${this.state.amount}</p>
