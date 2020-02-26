@@ -90,7 +90,7 @@ class App extends Component {
         <div className="text-left">
           <p>Donate ${this.state.amount}</p>
           <h3>Payment method</h3>
-          <Paypal/>
+          <Paypal amount={this.state.amount}/>
           <p>Children's Aid is exempt from federal income tax under section 501(c)(3) of the Internal Revenue Code, and contributions are tax-deductable to the extent allowed by law. Our Federal Identification Number is 13-5562191</p>
         </div></div>
         <div className="more-ways col-md-4">More ways to give</div>
